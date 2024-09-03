@@ -24,6 +24,11 @@ body {
   font-weight: 700;
   font-size: 12px;
 }
+.header p {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 24px;
+}
 .bx {
   margin: 10px;
 }
