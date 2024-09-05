@@ -40,22 +40,32 @@ const addDataToHTML = async () => {
   const querySnapshot = await getDocs(products);
   querySnapshot.forEach((doc) => {
     let product = doc.data();
-    console.log(product);
 
-    document.getElementById("products").innerHTML += `
-    <li class="product-item">
-        <img src="${product.image}" alt="${product.title}" class="product-image">
+    const li = document.createElement('li');
+    li.className = 'product-item';
+    li.innerHTML = `
+    <img src="${product.image}" alt="${product.title}" class="product-image">
         <div class="product-details">
           <div class="product-title">${product.title}</div>
           <div class="product-description">${product.desc}</div>
           <div class="product-price">${product.price}</div>
+          <button class="addCart">Add to cart</button>
         </div>
-    </li>
-        `;
-  });
-  // remove datas default from HTML
+  `;
 
-  // add new data
+    li.addEventListener('click', () => {
+      handleClickProduct(product);
+    });
+
+    document.getElementById('products').appendChild(li);
+  });
+
+  function handleClickProduct(product) {
+    localStorage.setItem("items", JSON.stringify(product));
+    // window.location.href = "../product-details/index.html";
+
+  }
+
 };
 listProductHTML.addEventListener("click", (event) => {
   let positionClick = event.target;
