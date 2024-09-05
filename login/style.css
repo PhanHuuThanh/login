@@ -2,32 +2,6 @@ body {
   margin: 0;
   font-family: Poppins;
 }
-.item {
-  display: flex;
-  justify-content: center;
-  width: 100px;
-  color: white;
-  font-size: 21px;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  background-color: black;
-  color: white;
-  font-weight: 700;
-  font-size: 12px;
-}
-.header p {
-  font-weight: 700;
-  font-size: 18px;
-  margin-left: 24px;
-}
-.bx {
-  margin: 10px;
-  font-size: 30px;
-}
 .container {
   width: 900px;
   margin: auto;
@@ -47,7 +21,6 @@ header {
 }
 .icon-cart {
   position: relative;
-  display: flex;
 }
 .icon-cart span {
   position: absolute;
@@ -254,55 +227,4 @@ ul {
   font-size: 1rem;
   font-weight: 500;
   color: #28a745;
-}
-footer {
-  display: flex;
-}
-
-.footerLeft {
-  flex: 2;
-  display: flex;
-  justify-content: space-between;
-  padding: 50px;
-}
-
-.fMenuTitle {
-  font-size: 16px;
-}
-.fList {
-  padding: 0;
-  list-style: none;
-}
-
-.fListItem {
-  margin-bottom: 10px;
-  color: gray;
-  cursor: pointer;
-}
-
-.footerRight {
-  flex: 1;
-  padding: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.fInput {
-  padding: 5px;
-}
-
-.fButton {
-  padding: 5px;
-  background-color: black;
-  color: white;
-}
-.fIcons {
-  display: flex;
-}
-
-.fIcon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
 }
