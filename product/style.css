@@ -2,6 +2,31 @@ body {
   margin: 0;
   font-family: Poppins;
 }
+.item {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  color: white;
+  font-size: 21px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+.header p {
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 24px;
+}
+.bx {
+  margin: 10px;
+}s
 .container {
   width: 900px;
   margin: auto;

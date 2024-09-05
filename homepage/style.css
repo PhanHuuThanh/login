@@ -65,9 +65,26 @@ h3 {
 }
 
 .content button {
+  background-color: transparent;
+  border: 1px solid white;
   color: white;
-  background-color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+  font-weight: 600;
 }
+.content button:hover {
+  background-color: white;
+  color: black;
+}
+
 .content {
   padding: 0px 130px;
   display: flex;
@@ -80,10 +97,7 @@ h3 {
   margin-top: 40px;
   font-size: 15px;
 }
-.content button {
-  margin-top: 30px;
-  font-size: 12px;
-}
+
 .services center {
   margin-top: 190px;
 }
@@ -172,4 +186,33 @@ footer {
 .copyright {
   font-weight: 300;
   font-size: 14px;
+}
+.button-overlay {
+  position: relative;
+  display: inline-block;
+  font-family: Gucci Sans Pro, sans-serif;
+}
+
+.button-overlay button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6b6b6b;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin: 4px 2px;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+.button-overlay button:hover {
+  background-color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 12px 40px 0 rgba(0, 0, 0, 0.25);
 }
