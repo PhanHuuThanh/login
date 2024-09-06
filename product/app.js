@@ -62,10 +62,9 @@ const addDataToHTML = async () => {
 
   function handleClickProduct(product) {
     localStorage.setItem("items", JSON.stringify(product));
-    // window.location.href = "../product-details/index.html";
+    window.location.href = "../product-details/index.html";
 
   }
-
 };
 listProductHTML.addEventListener("click", (event) => {
   let positionClick = event.target;
